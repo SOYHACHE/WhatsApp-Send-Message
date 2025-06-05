@@ -1,0 +1,92 @@
+/* Estilos generales */
+label {
+  color: #fff; /* Letras blancas */
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+h2 {
+  color: #075e54; /* O el color que quieras para la letra */
+  text-shadow: 
+    -1px -1px 0 #fff, 
+     1px -1px 0 #fff, 
+    -1px  1px 0 #fff, 
+     1px  1px 0 #fff;
+}
+body {
+  background-image: url('fondo.jpg'); /* Ruta a tu imagen */
+  background-size: cover;      /* Para que cubra toda la pantalla */
+  background-position: center; /* Centrada */
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #fff; /* Texto blanco si el fondo es oscuro */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #075e54;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+select,
+input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #25d366;
+  box-shadow: 0 0 5px rgba(37, 211, 102, 0.5);
+}
+
+button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #1ebd5a;
+}
+
+/* Estilo para error */
+.input-error {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+
+#error-message,
+#mensaje-error {
+  color: red;
+  font-size: 14px;
+  display: none;
+  margin-top: 5px;
+}
