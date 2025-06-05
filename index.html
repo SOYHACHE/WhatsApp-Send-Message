@@ -24,31 +24,24 @@
 <meta name="theme-color" content="#25D366">
 </head>
 <body>
+  <div class="contenedor">
+    <h2>Enviar mensaje por WhatsApp</h2>
 
-  <h2>Enviar mensaje por WhatsApp</h2>
+    <label for="codigo">Código de País:</label>
+    <select id="codigo">
+      <option value="+54">Argentina (+54)</option>
+      <option value="+52">México (+52)</option>
+      <option value="+1">USA (+1)</option>
+    </select>
 
-  <label for="codigo">Código de País:</label>
-  <select id="codigo">
-    <option value="+54">Argentina (+54)</option>
-    <option value="+52">México (+52)</option>
-    <option value="+1">USA (+1)</option>
-  </select>
+    <br><br>
 
-  <br><br>
+    <label for="telefono" id="label-telefono">Número de teléfono:</label><br><br>
+    <input type="number" id="telefono" placeholder="Sin el 0 ni el 15"><br>
+    <span id="mensaje-error">Número inválido. Verifica el formato.</span><br><br>
 
-  <label for="telefono" id="label-telefono">Número de teléfono:</label><br><br>
-  <input type="number" id="telefono" placeholder="Sin el 0 ni el 15"><br>
-  <span id="mensaje-error">Número inválido. Verifica el formato.</span><br><br>
-
-  <button onclick="validarYEnviar()">Enviar mensaje</button>
+    <button onclick="validarYEnviar()">Enviar mensaje</button>
+  </div>
 
   <script src="script.js"></script>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(reg => console.log('Service Worker registrado'))
-      .catch(err => console.error('Error al registrar Service Worker:', err));
-  }
-</script>
-</body>
-</html>
+</body></html>

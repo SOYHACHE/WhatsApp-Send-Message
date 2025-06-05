@@ -1,4 +1,29 @@
 /* Estilos generales */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.1); /* Semitransparente */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
 label {
   color: #fff; /* Letras blancas */
   font-weight: bold;
